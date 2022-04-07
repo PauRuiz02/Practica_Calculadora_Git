@@ -33,11 +33,7 @@ public class Practica2 {
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\n\tOperació? (Indica el signe)");
-                System.out.println("\t + = sumar \n\t - = restar \n\t"
-                        + " x = multiplicar \n\t / = dividir \n\t * = elevar primer num al segon num."
-                        + "\n\t % = residu");
-                System.out.print("Introduce la opcion deseada: ");
+                mostrarMenu();
                 operacion = sc.nextLine();
                 if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
                         || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")
@@ -118,5 +114,12 @@ public class Practica2 {
                 }
             } while (comprobar != true);
         } while (operacion.equals("s") || operacion.equals("S"));
+    }
+    public static void mostrarMenu(){
+        System.out.println("\n\tOperació? (Indica el signe)");
+                System.out.println("\t + = sumar \n\t - = restar \n\t"
+                        + " x = multiplicar \n\t / = dividir \n\t * = elevar primer num al segon num."
+                        + "\n\t % = residu");
+                System.out.print("Introduce la opcion deseada: ");
     }
 }
