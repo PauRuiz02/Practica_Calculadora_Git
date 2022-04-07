@@ -26,17 +26,18 @@ public class Practica2 {
 
             String numero1;
             do {
-                System.out.println("\n Introdueix el primer numero. ");
+                System.out.print("\nIntrodueix el primer numero: ");
                 numero1 = sc.nextLine();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\n Operació? (Indica el signe)");
-                System.out.println("+ = sumar \n - = restar \n"
-                        + " x = multiplicar \n / = dividir \n * = elevar primer num al segon num."
-                        + "\n % = residu");
+                System.out.println("\n\tOperació? (Indica el signe)");
+                System.out.println("\t + = sumar \n\t - = restar \n\t"
+                        + " x = multiplicar \n\t / = dividir \n\t * = elevar primer num al segon num."
+                        + "\n\t % = residu");
+                System.out.print("Introduce la opcion deseada: ");
                 operacion = sc.nextLine();
                 if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
                         || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")
@@ -49,7 +50,7 @@ public class Practica2 {
 
             String numero2;
             do {
-                System.out.println("\n Introdueix el segon numero.");
+                System.out.print("\nIntrodueix el segon numero: ");
                 numero2 = sc.nextLine();
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume2 = Double.parseDouble(numero2);
@@ -98,7 +99,7 @@ public class Practica2 {
                 }
             } while (comprobar != true);
 
-            System.out.println("(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
+            System.out.println("Resultado de la operacion: \n(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
             System.out.println("\n Vols continuar operant? \n");
             System.out.println(" [s/n]");
             do {
