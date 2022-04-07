@@ -95,7 +95,7 @@ public class Practica2 {
                 }
             } while (comprobar != true);
 
-            System.out.println("Resultado de la operacion: \n(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
+            imprimirResultat(numero1,operacion,numero2,res);
             System.out.println("\n Vols continuar operant? \n");
             System.out.println(" [s/n]");
             do {
@@ -121,5 +121,11 @@ public class Practica2 {
                         + " x = multiplicar \n\t / = dividir \n\t * = elevar primer num al segon num."
                         + "\n\t % = residu");
                 System.out.print("Introduce la opcion deseada: ");
+                
+    
+        
+    }
+    public static void imprimirResultat(String numero1, String operacion, String numero2, double res){
+        System.out.println("Resultado de la operacion: \n(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
     }
 }
